@@ -1,0 +1,52 @@
+import React from "react";
+import "./categories.css";
+import { Button, Typography, Avatar } from "@mui/material";
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import InstagramIcon from "@mui/icons-material/Instagram";
+const About = () => {
+  const visitInstagram = () => {
+    window.location = "https://instagram.com/";
+  };
+  return (
+    <div className="aboutSection">
+      <div></div>
+      <div className="aboutSectionGradient"></div>
+      <div className="aboutSectionContainer">
+        <Typography component="h1">About Us</Typography>
+
+        <div>
+          <div>
+            <Avatar
+              style={{ width: "10vmax", height: "10vmax", margin: "2vmax 0" }}
+              src="https://i.pinimg.com/236x/1e/3f/58/1e3f587572a7a7b20bbf1828595a1786--holiday-party-themes-holiday-gift-guide.jpg"
+              alt="Founder"
+            />
+            <Typography>Praveen Maharaj</Typography>
+            <Button onClick={visitInstagram} color="primary">
+              Visit Instagram
+            </Button>
+            <span>
+              This is a  wesbite made by @PraveenMaharaj. This Is amazing wesbite
+              and with all features made with Awesome mindset.
+            </span>
+          </div>
+          <div className="aboutSectionContainer2">
+            <Typography component="h2">Our Brands</Typography>
+            <a
+              href="https://www.youtube.com/channel/UCO7afj9AUo0zV69pqEYhcjw"
+              target="blank"
+            >
+              <YouTubeIcon className="youtubeSvgIcon" />
+            </a>
+
+            <a href="https://instagram.com/meabhisingh" target="blank">
+              <InstagramIcon className="instagramSvgIcon" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;
