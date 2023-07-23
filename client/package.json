@@ -48,5 +48,5 @@
   "devDependencies": {
     "react-router-dom": "^6.13.0"
   },
-  "proxy": "https://blog-appp-eb06.onrender.com/api/"
+  "proxy": "http://localhost:4004/api/"
 }

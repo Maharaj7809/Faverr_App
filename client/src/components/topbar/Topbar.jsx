@@ -10,7 +10,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
-  const PF = "https://blog-appp-eb06.onrender.com/images/"
+  const PF = "http://localhost:4004/images/"
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
