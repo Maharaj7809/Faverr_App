@@ -6,6 +6,8 @@ router.get("/", async (req, res) =>{
   res.status(200).json("auth route");
 })
 
+
+
 //REGISTER
 router.post("/register", async (req, res) => {
     try {
