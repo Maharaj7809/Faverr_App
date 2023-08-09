@@ -1,12 +1,12 @@
 .post {
-    width: 385px;
+    width: 345px;
     margin: 0px 25px 40px 25px;
     display: flex;
     flex-direction: column;
   }
   
   .postImg {
-    width: 385px;
+    width: 345px;
     height: 280px;
     object-fit: cover;
     border-radius: 7px;
