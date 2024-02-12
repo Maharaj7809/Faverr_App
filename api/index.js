@@ -19,7 +19,7 @@ app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
 mongoose
-  .connect('mongodb+srv://praveenmaharaj625:praveenmaharaj@cluster0.uxlsmss.mongodb.net/?retryWrites=true&w=majority', {
+  .connect('mongodb+srv://praveenmaharaj625:<password>@cluster0.uxlsmss.mongodb.net/?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
